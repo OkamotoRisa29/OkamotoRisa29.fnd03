@@ -1,0 +1,87 @@
+.card {
+  width: 100px;
+  height: 130px;
+  background-color: rgb(197, 2, 2);
+
+  border: 10px solid white;
+  border-radius: 10px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.377);
+  margin: 10px;
+
+  transition-property: flex-shrink, translate;
+  transition-duration: 0.2s;
+  display: none;
+}
+
+.all {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.card:hover {
+  flex-shrink: 0;
+  translate: 0 -1rem;
+}
+
+.card.flipped {
+  background-color: white;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+#person {
+  font-size: 30px;
+}
+
+#title {
+  font-size: 40px;
+}
+
+#startButton {
+  height: 40px;
+  width: 100px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+label {
+  font-size: 25px;
+}
+
+#order {
+  display: none;
+  font-size: 30px;
+  margin: 20px;
+  border: 5px solid gray;
+  padding: 10px;
+}
+
+#score {
+  display: none;
+  font-size: 30px;
+  border-bottom: 5px solid red;
+  padding: 10px;
+  margin: 20px;
+}
+
+#personSelect {
+  display: block;
+}
+
+#personError {
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+}
+
+#orderscore {
+  display: flex;
+}
